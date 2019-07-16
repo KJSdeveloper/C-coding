@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main()
+{
+    int num1, num2,result;
+    char c;
+    printf("사칙연산 입력(정수) : ");
+    scanf("%d%c%d", &num1,&c,&num2);
+	
+	switch(c)
+	{
+	case '+':
+		result=num1+num2;
+		break;
+	
+	case '-':
+		result=num1-num2;
+		break;
+		
+	case '*':
+		result=num1*num2;
+		break;
+	
+	case '/':
+		result=num1/num2;
+		break;
+	
+	}
+		printf("%d%c%d=%d",num1,c,num2,result);
+    return 0;
+}
