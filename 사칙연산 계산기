@@ -25,6 +25,9 @@ int main()
 		result=num1/num2;
 		break;
 	
+	case '%':
+		result=num1%num2;
+		break;
 	}
 		printf("%d%c%d=%d",num1,c,num2,result);
     return 0;
